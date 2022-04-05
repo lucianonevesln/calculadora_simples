@@ -18,7 +18,9 @@ def calculadora():
     numero2 = float(numero2)
     operacao = str(operacao)
 
-    if (operacao == "*"):
+    if (operacao == "/" and numero2 == 0):
+        resultado = 'Não se pode dividir um número por 0.'
+    elif (operacao == "*"):
         resultado = numero1 * numero2
     elif (operacao == "/"):
         resultado = numero1 / numero2
